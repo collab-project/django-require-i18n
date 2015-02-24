@@ -29,6 +29,7 @@ setup(
         "require_i18n.management",
         "require_i18n.management.commands",
     ],
+    keywords='django requirejs i18n plugin require.js',
     classifiers = [
         "Development Status :: 4 - Beta",
         "Environment :: Web Environment",
