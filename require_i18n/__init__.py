@@ -4,7 +4,7 @@
 from .util import extract_tower_json
 
 # version information
-__version__ = (1, 0, 0, 'b1')
+__version__ = (1, 0, 0, 'b2')
 
 #: For example: `2.0.0`
 short_version = '.'.join([str(x) for x in __version__[:3]])
