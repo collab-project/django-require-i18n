@@ -1,0 +1,11 @@
+#: static/js/site/nls/root/bar.js:5
+msgid "This is a test."
+msgstr ""
+
+#: static/js/site/nls/root/bar.js:6
+msgid "This is another test."
+msgstr ""
+
+#: static/js/site/nls/root/foo.js:5
+msgid "bar"
+msgstr ""

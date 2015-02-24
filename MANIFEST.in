@@ -1,0 +1,11 @@
+include README.rst .coveragerc
+
+recursive-include require_i18n *
+
+recursive-include doc *
+prune doc/_build
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *~
+recursive-exclude * .coverage

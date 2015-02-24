@@ -1,0 +1,8 @@
+# .coveragerc to control coverage.py
+[run]
+omit = 
+    require_i18n/tests/*
+    setup.py
+
+[html]
+directory = htmlcov
