@@ -8,4 +8,5 @@ prune doc/_build
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 recursive-exclude * *~
+recursive-exclude * .DS_Store
 recursive-exclude * .coverage
