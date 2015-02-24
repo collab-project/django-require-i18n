@@ -58,6 +58,6 @@ Indices and tables
 
 
 .. _pip: https://pypi.python.org/pypi/pip
-.. _PyPi: https://pypi.python.org/pypi/djang-require-i18n
+.. _PyPi: https://pypi.python.org/pypi/django-require-i18n
 .. _Require.js: http://requirejs.org
 .. _i18n plugin: https://github.com/requirejs/i18n
