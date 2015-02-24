@@ -1,5 +1,5 @@
-django-require-i18n's documentation
-===================================
+django-require-i18n
+===================
 
 Django management command for extracting and compiling
 internationalization/localization string resources used in the

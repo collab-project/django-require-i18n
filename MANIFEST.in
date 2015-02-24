@@ -1,4 +1,4 @@
-include README.rst .coveragerc
+include README.md .coveragerc LICENSE
 
 recursive-include require_i18n *
 
