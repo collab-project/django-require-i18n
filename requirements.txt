@@ -1,0 +1,5 @@
+django
+Babel
+polib>=1.0.6
+pybabel-json>=0.1.0
+tower>=0.4.1
