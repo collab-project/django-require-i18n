@@ -15,16 +15,19 @@ import sys
 import os
 from datetime import datetime
 
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('../require_i18n'))
 
-# Setup Django
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tests.settings')
+if on_rtd == False:
+    # Setup Django
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tests.settings')
 
-import django
-django.setup()
+    import django
+    django.setup()
 
 # -- General configuration ------------------------------------------------
 

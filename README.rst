@@ -21,10 +21,11 @@ Or checkout the source code::
 Documentation
 -------------
 
-Check the `doc` directory for more information.
+Documentation can be found on `readthedocs.org`_.
 
 
 .. _Require.js: http://requirejs.org
 .. _pip: https://pypi.python.org/pypi/pip
 .. _PyPi: https://pypi.python.org/pypi/djang-require-i18n
 .. _i18n plugin: https://github.com/requirejs/i18n
+.. _readthedocs.org: http://django-require-i18n.readthedocs.org/en/latest
