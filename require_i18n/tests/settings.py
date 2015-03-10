@@ -65,6 +65,8 @@ def JINJA_CONFIG():
 # form a new path.
 path = lambda *args: os.path.abspath(os.path.join(ROOT, *args))
 
+TOWER_INSTALL_JINJA_TRANSLATIONS = True
+
 INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.sessions',
