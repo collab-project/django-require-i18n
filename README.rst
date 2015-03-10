@@ -1,7 +1,7 @@
 django-require-i18n
 ===================
 
-Django management command for extracting and compiling
+Django_ management command for extracting and compiling
 internationalization/localization string resources used in the
 `Require.js`_ `i18n plugin`_.
 
@@ -24,9 +24,10 @@ Documentation
 Documentation can be found on `readthedocs.org`_.
 
 
+.. _Django: https://www.djangoproject.com
 .. _Require.js: http://requirejs.org
 .. _pip: https://pypi.python.org/pypi/pip
 .. _PyPi: https://pypi.python.org/pypi/django-require-i18n
 .. _i18n plugin: https://github.com/requirejs/i18n
-.. _readthedocs.org: http://django-require-i18n.readthedocs.org/en/latest
+.. _readthedocs.org: https://django-require-i18n.readthedocs.org/en/latest
 .. _Github: https://github.com/collab-project/django-require-i18n

@@ -11,7 +11,7 @@ Create bundle
 
 Start by defining a `require.js i18n bundle`_.
 
-For example, in a Django project called ``myproject`` there is a
+For example, in a Django_ project called ``myproject`` there is a
 require.js application called ``site`` with a directory structure
 similar to this::
 
@@ -231,8 +231,9 @@ Simply run the ``compile_js`` whenever you update your translations or want
 to support a new language.
 
 
+.. _Django: https://www.djangoproject.com
 .. _require.js i18n bundle: http://requirejs.org/docs/api.html#i18n
 .. _STATICFILES_DIRS: https://docs.djangoproject.com/en/1.7/ref/settings/#staticfiles-dirs
 .. _STATIC_ROOT: https://docs.djangoproject.com/en/1.7/ref/settings/#static-root
 .. _LOCALE_PATHS: https://docs.djangoproject.com/en/1.7/ref/settings/#locale-paths
-.. _poedit: http://poedit.net
+.. _poedit: https://poedit.net
