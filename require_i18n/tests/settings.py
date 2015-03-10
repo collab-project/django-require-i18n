@@ -30,7 +30,7 @@ define(
 );
 """
 
-#: Custom metdata for .po file
+#: Custom metadata for .po file
 REQUIRE_I18N_PO_METADATA = {
     'Project-Id-Version': '1.0',
     'Report-Msgid-Bugs-To': 'i18n-bugs@root',
