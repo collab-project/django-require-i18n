@@ -52,6 +52,17 @@ Generate a test coverage_ report in HTML format::
 
 Open ``htmlcov/index.html`` in your browser to view the report.
 
+Release
+-------
+
+Creating a new release on test PyPi::
+
+  python setup.py sdist upload -r pypitest
+
+And on live::
+
+  python setup.py sdist upload -r pypi
+
 
 .. _pip: https://pypi.python.org/pypi/pip
 .. _PyPi: https://pypi.python.org/pypi/django-require-i18n
