@@ -18,8 +18,8 @@ setup(
     name = "django-require-i18n",
     version = version,
     license = "MIT",
-    description = "Extract and compile localization strings for the " +
-        "require.js i18n plugin.",
+    description = "Django management command for extracting and compiling "
+        "localization strings used in the require.js i18n plugin.",
     author = "Thijs Triemstra",
     author_email = "info@collab.nl",
     url = "https://github.com/collab-project/django-require-i18n",
@@ -31,7 +31,7 @@ setup(
     ],
     keywords='django requirejs i18n plugin require.js',
     classifiers = [
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
         "Intended Audience :: Developers",
