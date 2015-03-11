@@ -74,7 +74,7 @@ class Command(BaseCommand):
                 info = get_language_info(locale)
                 self.languages.append((info['code'], info['name']))
             else:
-                raise CommandError('Not a valid locale: {}'.format(locale))
+                raise CommandError('Not a valid locale: {0}'.format(locale))
 
         self.output_dir = os.path.join(settings.ROOT, 'locale', 'templates',
             'LC_MESSAGES')
@@ -103,7 +103,7 @@ class Command(BaseCommand):
             pass
 
         self.stdout.write('\n')
-        self.stdout.write('Updating catalogs for domain {}...'.format(
+        self.stdout.write('Updating catalogs for domain {0}...'.format(
             self.domain))
 
         self.catalog_update.extract()
@@ -114,7 +114,7 @@ class Command(BaseCommand):
         """
         self.stdout.write('\n')
         self.stdout.write(
-            'Updating javascript translations for domain {}...'.format(
+            'Updating javascript translations for domain {0}...'.format(
             self.domain))
 
         self.catalog_update.compile()

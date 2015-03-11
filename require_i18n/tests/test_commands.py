@@ -46,7 +46,7 @@ class CompileJSTestCase(TestCase):
         if enabled is True:
             files = []
             for root, dirnames, filenames in os.walk(self.locale_path):
-                files.extend(glob(os.path.join(root, "{}.po*".format(
+                files.extend(glob(os.path.join(root, "{0}.po*".format(
                              self.good_domain))))
 
             for f in files:
@@ -62,7 +62,7 @@ class CompileJSTestCase(TestCase):
                 domain=self.bad_domain)
 
         self.assertEqual(str(cm.exception),
-            'Input catalog not found: {}/templates/LC_MESSAGES/{}.pot'.format(
+            'Input catalog not found: {0}/templates/LC_MESSAGES/{1}.pot'.format(
             self.locale_path, self.bad_domain))
 
     def test_invalidLocale(self):
@@ -74,7 +74,7 @@ class CompileJSTestCase(TestCase):
             call_command(self.cmd_name, interactive=False, dry_run=True,
                 locale=self.bad_locale)
 
-        self.assertEqual(str(cm.exception), 'Not a valid locale: {}'.format(
+        self.assertEqual(str(cm.exception), 'Not a valid locale: {0}'.format(
             self.bad_locale))
 
     def test_validLocaleDefaultDomain(self):
@@ -109,9 +109,9 @@ class CompileJSTestCase(TestCase):
             no_empty=True)
 
         pot_file_path = os.path.join(self.locale_path, 'templates',
-            "LC_MESSAGES", "{}.pot".format(self.good_domain))
+            "LC_MESSAGES", "{0}.pot".format(self.good_domain))
         po_file_path = os.path.join(self.locale_path, self.good_locale,
-            "LC_MESSAGES", "{}.po".format(self.good_domain))
+            "LC_MESSAGES", "{0}.po".format(self.good_domain))
 
         # the .po and .pot files exist
         self.assertTrue(os.path.exists(pot_file_path))
@@ -126,7 +126,7 @@ class CompileJSTestCase(TestCase):
             'i18n-bugs@root')
         self.assertEqual(po_file.metadata['Language'], self.good_locale)
         self.assertEqual(po_file.metadata['Language-Team'],
-            'Dutch <{}@root>'.format(self.good_locale))
+            'Dutch <{0}@root>'.format(self.good_locale))
 
         # translate and save the file
         for entry in po_file:
@@ -146,7 +146,7 @@ class CompileJSTestCase(TestCase):
             "static", "js", self.good_domain, "nls", self.good_locale,
             "colors.js")
         self.assertTrue(os.path.exists(trans_path),
-            "Translated file expected, does not exist: {}".format(
+            "Translated file expected, does not exist: {0}".format(
             trans_path))
 
         # remove translations
@@ -177,7 +177,7 @@ class CompileJSTestCase(TestCase):
             no_empty=True)
 
         po_file_path = os.path.join(self.locale_path, self.new_locale,
-            "LC_MESSAGES", "{}.po".format(self.good_domain))
+            "LC_MESSAGES", "{0}.po".format(self.good_domain))
 
         # the new .po file exists
         self.assertTrue(os.path.exists(po_file_path))
@@ -197,7 +197,7 @@ class CompileJSTestCase(TestCase):
             no_empty=True, output_type="json")
 
         po_file_path = os.path.join(self.locale_path, self.good_locale,
-            "LC_MESSAGES", "{}.po".format(self.good_domain))
+            "LC_MESSAGES", "{0}.po".format(self.good_domain))
         po_file = polib.pofile(po_file_path)
 
         # translate and save the file
@@ -218,7 +218,7 @@ class CompileJSTestCase(TestCase):
             "static", "js", self.good_domain, "nls", self.good_locale,
             "colors.json")
         self.assertTrue(os.path.exists(trans_path),
-            "Translated file expected, does not exist: {}".format(
+            "Translated file expected, does not exist: {0}".format(
             trans_path))
 
         # translation is correct

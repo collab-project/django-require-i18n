@@ -68,7 +68,7 @@ class UpdateCatalog(object):
                 update_po = self.addLanguage(self.update_po_path, code, label)
 
             if not os.path.exists(self.input_pot_path):
-                raise CommandError('Input catalog not found: {}'.format(
+                raise CommandError('Input catalog not found: {0}'.format(
                     self.input_pot_path))
 
             # merge extraction data
@@ -86,8 +86,8 @@ class UpdateCatalog(object):
                 # save
                 update_po.save(self.update_po_path)
 
-            self.stdout.write('  {} ({}): {}% translated.'.format(code, label,
-                update_po.percent_translated()))
+            self.stdout.write('  {0} ({1}): {2}% translated.'.format(code,
+                label, update_po.percent_translated()))
 
     def compile(self):
         """
@@ -152,7 +152,7 @@ class UpdateCatalog(object):
             # compile new javascript translation files
             for locale, po_path, out_path, json_data, js_file in jobs:
 
-                self.stdout.write('  {}'.format(out_path))
+                self.stdout.write('  {0}'.format(out_path))
 
                 translation = self.po2dict(po_path, json_data)
 
