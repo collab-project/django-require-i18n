@@ -5,6 +5,10 @@ Django_ management command for extracting and compiling
 internationalization/localization string resources used in the
 `Require.js`_ `i18n plugin`_.
 
+.. image:: https://travis-ci.org/collab-project/django-require-i18n.svg?branch=master
+    :target: https://travis-ci.org/collab-project/django-require-i18n
+.. image:: https://coveralls.io/repos/collab-project/django-require-i18n/badge.svg
+    :target: https://coveralls.io/r/collab-project/django-require-i18n
 
 Installation
 ------------
