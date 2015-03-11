@@ -3,6 +3,8 @@
 omit = 
     require_i18n/tests/*
     setup.py
+    .tox/*
+    doc/*
 
 [html]
 directory = htmlcov
