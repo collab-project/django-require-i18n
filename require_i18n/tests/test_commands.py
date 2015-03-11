@@ -223,6 +223,6 @@ class CompileJSTestCase(TestCase):
 
         # translation is correct
         with open(trans_path, 'r') as p:
-            expectedResult = {u'redColor': u'rood', u'yellowColor': u'geel'}
+            expectedResult = {'redColor': 'rood', 'yellowColor': 'geel'}
             translation = json.loads(p.read())
             self.assertDictEqual(expectedResult, translation)

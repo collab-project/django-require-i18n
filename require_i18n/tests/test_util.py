@@ -57,4 +57,4 @@ msgstr ""
         output = fake_extract_from_dir('filename', fileobj, method,
             keywords=TOWER_KEYWORDS, options=OPTIONS_MAP,
             comment_tags=COMMENT_TAGS)
-        self.assertEqual(po_output, unicode(create_pofile_from_babel(output)))
+        self.assertEqual(po_output, str(create_pofile_from_babel(output)))

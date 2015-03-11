@@ -161,7 +161,7 @@ class UpdateCatalog(object):
 
                 if self.dry_run is False:
                     # nothing to translate and we want to ignore the file
-                    if len(translation.keys()) == 0 and self.no_empty is True:
+                    if len(list(translation.keys())) == 0 and self.no_empty is True:
                         # file already exists because it previously contained
                         # translations
                         if os.path.exists(out_path):
@@ -231,7 +231,7 @@ class UpdateCatalog(object):
         """
         catalog = polib.pofile(po_path)
 
-        for key, val in json_data.items():
+        for key, val in list(json_data.items()):
             # find translation entry in catalog
             entry = catalog.find(val)
 
