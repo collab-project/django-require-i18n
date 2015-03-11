@@ -6,6 +6,7 @@ env:
   - TOX_ENV=py27-1.7
   - TOX_ENV=coverage
 install:
-  - pip install tox tower ninja2
+  - pip install tox
+  - pip install -r requirements.txt
 script:
   - tox -e $TOX_ENV
