@@ -1,10 +1,7 @@
 # Copyright Collab 2015
 
-# shortcuts
-from .util import extract_tower_json
-
 # version information
-__version__ = (1, 1, 0)
+__version__ = (1, 2, 0, 'b1')
 
 #: For example: `2.0.0`
 short_version = '.'.join([str(x) for x in __version__[:3]])
