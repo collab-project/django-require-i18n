@@ -106,14 +106,14 @@ directory structure:
   # dict of domain to file spec and extraction method tuples.
   DOMAIN_METHODS = {
       'site': [
-          ('static/js/site/nls/root/*.js', 'require_i18n.extract_tower_json'),
+          ('static/js/site/nls/root/*.js', 'require_i18n.util.extract_tower_json'),
       ]
   }
 
 The keys in this dict refer to the domain name (``site``) and it's values
 are mappings between paths to the root translation files and the Python
 method that will be used to extract the translation strings
-(``require_i18n.extract_tower_json``).
+(``require_i18n.util.extract_tower_json``).
 
 Customize settings
 ------------------

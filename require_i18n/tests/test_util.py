@@ -52,7 +52,7 @@ msgid "Error for you!"
 msgstr ""
 """
         fileobj = BytesIO(po_input)
-        method = 'require_i18n.extract_tower_json'
+        method = 'require_i18n.util.extract_tower_json'
 
         output = fake_extract_from_dir('filename', fileobj, method,
             keywords=TOWER_KEYWORDS, options=OPTIONS_MAP,

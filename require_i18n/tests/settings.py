@@ -44,10 +44,10 @@ ROOT = os.path.dirname(__file__)
 #: dict of domain to file spec and extraction method tuples.
 DOMAIN_METHODS = {
     'site': [
-        ('static/js/site/nls/root/*.js', 'require_i18n.extract_tower_json'),
+        ('static/js/site/nls/root/*.js', 'require_i18n.util.extract_tower_json'),
     ],
     'test': [
-        ('static/js/test/nls/root/*.js', 'require_i18n.extract_tower_json'),
+        ('static/js/test/nls/root/*.js', 'require_i18n.util.extract_tower_json'),
     ]
 }
 
