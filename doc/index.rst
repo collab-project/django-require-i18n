@@ -30,7 +30,7 @@ After installation a new Django management command is available called
 
   ./manage.py compile_js --help
 
-Also check out the tutorial for more information on how to configure
+Also check out the :doc:`tutorial` for more information on how to configure
 your Django and require.js project:
 
 .. toctree::
