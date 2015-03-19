@@ -14,6 +14,8 @@ from babel.messages.extract import DEFAULT_KEYWORDS, extract
 from tower.management.commands.extract import (create_pofile_from_babel,
     OPTIONS_MAP, COMMENT_TAGS)
 
+from require_i18n import get_version
+
 
 TOWER_KEYWORDS = dict(DEFAULT_KEYWORDS)
 
@@ -58,3 +60,24 @@ msgstr ""
             keywords=TOWER_KEYWORDS, options=OPTIONS_MAP,
             comment_tags=COMMENT_TAGS)
         self.assertEqual(po_output, str(create_pofile_from_babel(output)))
+
+
+class VersionTestCase(TestCase):
+    """
+    Tests for :py:mod:`~require_i18n` versioning information.
+    """
+    def test_regularVersion(self):
+        """
+        :py:func:`~require_i18n.get_version` returns a string version without
+        any beta tags, eg. `1.0.1`.
+        """
+        version = (1, 0, 1)
+        self.assertEqual(get_version(version), '1.0.1')
+
+    def test_betaVersion(self):
+        """
+        :py:func:`~require_i18n.get_version` returns a string version with beta tags,
+        eg. `1.2.3b1`.
+        """
+        version = (1, 2, 3, 'b1')
+        self.assertEqual(get_version(version), '1.2.3b1')
