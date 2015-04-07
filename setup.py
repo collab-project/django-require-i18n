@@ -4,16 +4,6 @@ from setuptools import setup
 
 from require_i18n import version
 
-
-INSTALL_REQUIRES = [
-    "django",
-    "Babel",
-    "polib>=1.0.6",
-    "pybabel-json>=0.1.0",
-    "tower>=0.4.1"
-]
-
-
 setup(
     name = "django-require-i18n",
     version = version,
@@ -23,7 +13,6 @@ setup(
     author = "Thijs Triemstra",
     author_email = "info@collab.nl",
     url = "https://github.com/collab-project/django-require-i18n",
-    install_requires=INSTALL_REQUIRES,
     packages = [
         "require_i18n",
         "require_i18n.management",
