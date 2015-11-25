@@ -5,12 +5,12 @@ python:
 sudo: false
 cache: pip
 install:
-  - "pip install tox importlib"
-  - "pip install -r requirements.txt"
+  - "pip install -U pip tox importlib"
+  - "pip install -r requirements/production.txt"
   - "pip install ."
 script:
   - if [[ $TRAVIS_PYTHON_VERSION == '2.6' ]]; then tox -e py26-1.6; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.6; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.7; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.8; fi
-  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e coverage; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e coveralls; fi

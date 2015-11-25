@@ -1,0 +1,4 @@
+tox
+coverage
+pep8
+pyflakes
