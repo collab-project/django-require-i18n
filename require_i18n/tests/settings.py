@@ -125,10 +125,6 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'formatter': 'simple',
         },
-        'null': {
-            'level': 'DEBUG',
-            'class': 'django.utils.log.NullHandler',
-        }
     },
     'loggers': {
         'require_i18n': {

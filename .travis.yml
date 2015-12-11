@@ -13,4 +13,5 @@ script:
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.6; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.7; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.8; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.9; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e coveralls; fi
