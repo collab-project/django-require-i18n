@@ -1,4 +1,5 @@
-# Copyright Collab 2015
+# Copyright Collab 2015-2016
+# See LICENSE for details.
 
 """
 URLConf for :py:mod:`require_i18n` tests.

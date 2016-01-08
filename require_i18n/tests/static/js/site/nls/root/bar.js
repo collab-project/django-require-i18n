@@ -1,4 +1,4 @@
-// Copyright Collab 2015
+// Copyright Collab 2015-2016
 
 define(
 {

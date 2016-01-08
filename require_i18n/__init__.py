@@ -1,4 +1,5 @@
-# Copyright Collab 2015
+# Copyright Collab 2015-2016
+# See LICENSE for details.
 
 """
 `django-require-i18n` application.

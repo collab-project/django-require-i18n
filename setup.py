@@ -1,4 +1,5 @@
-# Copyright Collab 2015
+# Copyright Collab 2015-2016
+# See LICENSE for details.
 
 from setuptools import setup
 
@@ -18,7 +19,7 @@ setup(
         "require_i18n.management",
         "require_i18n.management.commands",
     ],
-    keywords='django requirejs i18n plugin require.js',
+    keywords="django requirejs i18n plugin require.js",
     classifiers = [
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
