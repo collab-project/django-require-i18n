@@ -25,6 +25,8 @@ Use pip_ to install the download and install the package from PyPi_::
 Or checkout the source code from Github_::
 
   git clone https://github.com/collab-project/django-require-i18n.git
+  cd django-require-i18n
+  pip install -e .
 
 
 Documentation

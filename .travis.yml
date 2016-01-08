@@ -4,10 +4,7 @@ python:
   - "2.7"
 sudo: false
 cache: pip
-install:
-  - "pip install -U pip tox importlib"
-  - "pip install -r requirements/production.txt"
-  - "pip install ."
+install: pip install --upgrade pip tox coveralls
 script:
   - if [[ $TRAVIS_PYTHON_VERSION == '2.6' ]]; then tox -e py26-1.6; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27-1.6; fi

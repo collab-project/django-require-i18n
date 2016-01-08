@@ -1,7 +1,7 @@
 include README.rst .coveragerc LICENSE tox.ini setup.py
 
-recursive-include requirements *
 recursive-include require_i18n *
+recursive-include require_i18n/tests *.txt
 
 recursive-include doc *
 prune doc/_build

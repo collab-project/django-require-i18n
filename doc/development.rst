@@ -1,9 +1,11 @@
 Development
 ===========
 
-After checkout, install package in active virtualenv::
+After checkout, install package in active virtualenv from the source root
+directory::
 
   pip install -e .
+  pip install -r require_i18n/tests/requirements.txt
 
 
 Testing
@@ -27,6 +29,21 @@ To generate a test coverage report using `coverage.py`_::
   coverage html
 
 The resulting HTML report can be found in the ``htmlcov`` directory.
+
+
+Documentation
+-------------
+
+Install Sphinx::
+
+  pip install sphinx>=1.1.0
+
+Change to the ``doc`` directory and run::
+
+  make html
+
+The resulting HTML documentation can be found in the ``doc/_build/html``
+directory.
 
 
 Release

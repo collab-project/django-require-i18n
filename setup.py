@@ -19,6 +19,13 @@ setup(
         "require_i18n.management",
         "require_i18n.management.commands",
     ],
+    install_requires=[
+        "Jinja2",
+        "Babel",
+        "polib>=1.0.6",
+        "pybabel-json>=0.2.0",
+        "tower>=0.4.1"
+    ],
     keywords="django requirejs i18n plugin require.js",
     classifiers = [
         "Development Status :: 5 - Production/Stable",
