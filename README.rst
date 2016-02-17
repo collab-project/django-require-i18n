@@ -7,6 +7,8 @@ internationalization/localization string resources used in the
 
 .. image:: https://img.shields.io/pypi/v/django-require-i18n.svg
     :target: https://pypi.python.org/pypi/django-require-i18n
+.. image:: https://img.shields.io/pypi/pyversions/django-require-i18n.svg
+    :target: https://pypi.python.org/pypi/django-require-i18n
 .. image:: https://travis-ci.org/collab-project/django-require-i18n.svg?branch=master
     :target: https://travis-ci.org/collab-project/django-require-i18n
 .. image:: https://coveralls.io/repos/collab-project/django-require-i18n/badge.svg
