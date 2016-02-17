@@ -6,7 +6,7 @@ cache:
 matrix:
   allow_failures:
     - python: "3.4"
-install: pip install --upgrade pip tox wheel coveralls
+install: pip install --upgrade pip tox wheel
 script: tox
 env:
   - TOXENV=py26-django-16
