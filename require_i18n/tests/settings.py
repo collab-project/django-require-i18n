@@ -19,12 +19,12 @@ DATABASES = {
 TIME_ZONE = 'Europe/Amsterdam'
 
 #: Customized copyright header
-REQUIRE_I18N_HEADER = """Copyright (C) 2015 Collab
+REQUIRE_I18N_HEADER = """Copyright (C) 2015-2016 Collab
 This file is distributed under the same license as the django-require-i18n project.
 """
 
 #: Customized Javascript template
-REQUIRE_I18N_JS_TEMPLATE = """// Copyright Collab 2015
+REQUIRE_I18N_JS_TEMPLATE = """// Copyright Collab 2015-2016
 
 define(
 {0}
