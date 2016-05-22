@@ -6,7 +6,6 @@ Extract and compile localization strings for the require.js i18n plugin.
 """
 
 import os
-from optparse import make_option
 
 from django.conf import settings
 from django.core.management import call_command
@@ -19,34 +18,34 @@ from require_i18n.core import UpdateCatalog
 class Command(BaseCommand):
     help = 'Compile gettext catalogs used in the require.js i18n plugin.'
 
-    option_list = BaseCommand.option_list + (
-        make_option("-l", "--locale",
+    def add_arguments(self, parser):
+        parser.add_argument("-l", "--locale",
             dest="locale",
             help="Locale(s) to process (e.g. nl). Default is to process" +
                 " all. Can be used multiple times.",
             default="all",
             metavar="LOCALE"
-        ),
-        make_option("-d", "--domain",
+        )
+        parser.add_argument("-d", "--domain",
             dest="domain",
             help="The domain of the message files. Default: %default",
             default="site",
             metavar="DOMAIN"
-        ),
-        make_option("--dry-run",
+        )
+        parser.add_argument("--dry-run",
             action="store_true",
             dest="dry_run",
             default=False,
             help="Simulate without updating files. Default: %default"
-        ),
-        make_option("--no-empty",
+        )
+        parser.add_argument("--no-empty",
             action="store_true",
             dest="no_empty",
             default=False,
             help="Empty compiled translation files are not allowed and will " +
                 "be deleted if detected. Default: %default"
-        ),
-        make_option("-t", "--output-type",
+        )
+        parser.add_argument("-t", "--output-type",
             dest="output_type",
             help="The type for the translated output files, either 'json' " +
                 "for JSON format or 'script' for Javascript files. " +
@@ -54,7 +53,6 @@ class Command(BaseCommand):
             default="script",
             metavar="TYPE"
         )
-    )
 
     def handle(self, *args, **options):
         self.locale_dir = settings.LOCALE_PATHS[0]
