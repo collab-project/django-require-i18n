@@ -30,6 +30,10 @@ Or checkout the source code from Github_::
   cd django-require-i18n
   pip install -e .
 
+If you're using Djang0 1.9 or newer, use `this fork`_ of the `tower` dependency::
+
+  pip install -e git+https://github.com/thijstriemstra/tower.git#egg=tower
+
 
 Documentation
 -------------
@@ -38,6 +42,7 @@ Documentation can be found on `readthedocs.org`_.
 
 
 .. _Django: https://www.djangoproject.com
+.. _this fork: https://github.com/thijstriemstra/tower
 .. _Require.js: http://requirejs.org
 .. _pip: https://pypi.python.org/pypi/pip
 .. _PyPi: https://pypi.python.org/pypi/django-require-i18n
