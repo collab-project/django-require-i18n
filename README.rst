@@ -38,7 +38,7 @@ If you're using Djang0 1.9 or newer, use `this fork`_ of the `tower` dependency:
 Documentation
 -------------
 
-Documentation can be found on `readthedocs.org`_.
+Documentation can be found on `readthedocs.io`_.
 
 
 .. _Django: https://www.djangoproject.com
@@ -47,5 +47,5 @@ Documentation can be found on `readthedocs.org`_.
 .. _pip: https://pypi.python.org/pypi/pip
 .. _PyPi: https://pypi.python.org/pypi/django-require-i18n
 .. _i18n plugin: https://github.com/requirejs/i18n
-.. _readthedocs.org: https://django-require-i18n.readthedocs.org/en/latest
+.. _readthedocs.org: https://django-require-i18n.readthedocs.io/en/latest
 .. _Github: https://github.com/collab-project/django-require-i18n
