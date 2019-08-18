@@ -54,6 +54,7 @@ DOMAIN_METHODS = {
 
 TEXT_DOMAIN = 'messages'
 
+
 #: Jinja configuration for tower.
 def JINJA_CONFIG():
     config = {'extensions': ['tower.template.i18n',
@@ -61,6 +62,7 @@ def JINJA_CONFIG():
                              'jinja2.ext.loopcontrols'],
               'finalize': lambda x: x if x is not None else ''}
     return config
+
 
 # function that takes arbitrary set of args and combines them with ROOT to
 # form a new path.
