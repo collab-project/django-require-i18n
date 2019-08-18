@@ -1,4 +1,4 @@
-# Copyright Collab 2015-2016
+# Copyright Collab 2015-2019
 # See LICENSE for details.
 
 """
@@ -6,7 +6,7 @@
 """
 
 #: Application version.
-__version__ = (1, 2, 3)
+__version__ = (1, 3, 0)
 
 
 def short_version(version=None):
